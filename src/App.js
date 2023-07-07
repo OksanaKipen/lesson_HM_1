@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Character from "./components/character/character";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div>
+          <Character id={1} name={'Sasha'} status={true} image={"https://t3.ftcdn.net/jpg/03/88/55/52/360_F_388555227_2i2EboCheQGFvJ4ywW3tm5KWNP4pSUEK.jpg"}/>
+
+        </div>
+    );
+};
 
 export default App;
